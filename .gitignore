@@ -1,0 +1,14 @@
+.svn/
+bin/
+out/
+target/
+.idea/
+*.iml
+build/
+dist/
+nbproject/
+nbactions.xml
+nb-configuration.xml
+rebel.xml
+
+*.pdb
