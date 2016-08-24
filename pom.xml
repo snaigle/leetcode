@@ -13,6 +13,7 @@
         <module>1-twosum</module>
         <module>2-add-two-number</module>
         <module>99-restore-ip-addresses</module>
+        <module>3-longest-substring-without-repeating-characters</module>
     </modules>
 
 </project>
