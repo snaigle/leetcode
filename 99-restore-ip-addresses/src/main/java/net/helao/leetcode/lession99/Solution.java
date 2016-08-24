@@ -9,60 +9,50 @@ import java.util.List;
  */
 public class Solution {
     public static void main(String[] args) {
-        List<String> a = new Solution().restoreIpAddresses("1125511");
+        List<String> a = new Solution().restoreIpAddresses("25525511135");
         for (String b : a) {
             System.out.println(b);
         }
     }
 
     public List<String> restoreIpAddresses(String s) {
-        // 为空 或 长度小4时,无法构成一个ip串，直接返回
-        // ([0-9]|[1-9][0-9]|[1][0-9]{2}|[2][0-4][0-9]|[2][5][0-5])\.
-        if (s == null || s.length() < 4 || s.length() > 12) {
-            return new ArrayList<String>();
-        }
-        return internalMatch(0, "", s);
-    }
-
-    public List<String> internalMatch(int index, String preffix, String after) {
         List<String> result = new ArrayList<String>();
-        int length = after.length();
-        if (length > 0) {
-            if (index == 3) {
-                if (length <= 3 && isValid(after)) {
-                    result.add(preffix + "." + after);
-                }
-            } else {
-                char c = after.charAt(0);
-                if (c == '0') {
-                    // 只有一位
-                    result.addAll(internalSubstring(index, 1, preffix, after));
-                } else if (c == '1' || c == '2') {
-                    // 有1,2,3位三种情况
-                    result.addAll(internalSubstring(index, 1, preffix, after));
-                    result.addAll(internalSubstring(index, 2, preffix, after));
-                    result.addAll(internalSubstring(index, 3, preffix, after));
-                } else {
-                    // 只有1,2位两种情况
-                    result.addAll(internalSubstring(index, 1, preffix, after));
-                    result.addAll(internalSubstring(index, 2, preffix, after));
-                }
-
-            }
+        if (s == null) {
+            return result;
         }
-        return result;
-    }
+        int length = s.length();
+        if (length < 4 || length > 12) {
+            return result;
+        }
+        for (int i0 = 1; i0 < 4; i0++) {
+            for (int i1 = 1; i1 < 4; i1++) {
+                for (int i2 = 1; i2 < 4; i2++) {
+                    int i3 = length - i0 - i1 - i2;
+                    if (i3 > 0 && i3 < 4) {
+                        String p0 = s.substring(0, i0);
+                        if (isValid(p0)) {
+                            String p1 = s.substring(i0, i0 + i1);
+                            if (isValid(p1)) {
+                                String p2 = s.substring(i0 + i1, i0 + i1 + i2);
+                                if (isValid(p2)) {
+                                    String p3 = s.substring(i0 + i1 + i2);
+                                    if (isValid(p3)) {
+                                        result.add(new StringBuilder(p0)
+                                                .append(".")
+                                                .append(p1)
+                                                .append(".")
+                                                .append(p2)
+                                                .append(".")
+                                                .append(p3)
+                                                .toString()
+                                        );
+                                    }
+                                }
+                            }
+                        }
 
-    public List<String> internalSubstring(int index, int subCount, String preffix, String after) {
-        List<String> result = new ArrayList<String>();
-        if (subCount <= after.length()) {
-            String param = after.substring(0, subCount);
-            if (isValid(param)) {
-                if (index != 0) {
-                    preffix += '.';
+                    }
                 }
-                preffix += param;
-                result.addAll(internalMatch(index + 1, preffix, after.substring(subCount)));
             }
         }
         return result;
