@@ -12,6 +12,7 @@
     <modules>
         <module>1-twosum</module>
         <module>2-add-two-number</module>
+        <module>99-restore-ip-addresses</module>
     </modules>
 
 </project>
