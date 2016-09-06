@@ -14,6 +14,7 @@
         <module>2-add-two-number</module>
         <module>99-restore-ip-addresses</module>
         <module>3-longest-substring-without-repeating-characters</module>
+        <module>4-median-of-two-sorted-arrays</module>
     </modules>
 
 </project>

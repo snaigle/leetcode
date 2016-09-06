@@ -1,4 +1,4 @@
-package net.helao.leetcode.twosum;
+package net.helao.leetcode.lession1;
 
 import java.util.HashMap;
 
@@ -6,7 +6,7 @@ import java.util.HashMap;
  * 这个题有个简单算法,复杂度是log(n^2)
  * 下面这个算法是log(n)
  */
-public class Answer1 {
+public class Solution {
 
     public int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> m = new HashMap<>(nums.length);
