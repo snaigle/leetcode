@@ -24,27 +24,27 @@ public class Solution {
 
             int result;
             boolean add1;
-            if (i1 >= nums1.length) {
+            if (i1 >= len1) {
                 add1 = false;
-            } else if (i2 >= nums2.length) {
+            } else if (i2 >= len2) {
                 add1 = true;
             } else {
                 add1 = nums1[i1] <= nums2[i2];
             }
-            result = add1 ? nums1[i1] : nums2[i2];
-            if (add1) {
-                i1++;
-            } else {
-                i2++;
-            }
             if (i == medianIndex) {
+                result = add1 ? nums1[i1] : nums2[i2];
                 if (isOdd) {
                     return (result + last) / 2.0D;
                 } else {
                     return result;
                 }
+            } else if (i == medianIndex - 1) {
+                last = add1 ? nums1[i1] : nums2[i2];
+            }
+            if (add1) {
+                i1++;
             } else {
-                last = result;
+                i2++;
             }
         }
         return 0d;
