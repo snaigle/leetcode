@@ -1,3 +1,1 @@
-# leetcodehello
-hello
-hello
+# leetcode
