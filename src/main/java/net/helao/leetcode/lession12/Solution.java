@@ -6,7 +6,7 @@ package net.helao.leetcode.lession12;
  */
 public class Solution {
     public String intToRoman(int num) {
-        StringBuilder sb = new StringBuilder(12);
+        StringBuilder sb = new StringBuilder(16);
         int i = 0, a, rest = num;
         char[] cc = {'I', 'V', 'X', 'L', 'C', 'D', 'M'};
         int start;
@@ -56,5 +56,6 @@ public class Solution {
         System.out.println(new Solution().intToRoman(3456));
         System.out.println(new Solution().intToRoman(3341));
         System.out.println(new Solution().intToRoman(3333));
+        System.out.println(new Solution().intToRoman(3888));
     }
 }
