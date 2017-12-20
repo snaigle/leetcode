@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * 给定 一组数字如"123455653",算出可能的ip地址
- * Created by wangcheng<gates@mucang.cn> on 16/8/23.
+ * Created by snaigle on 16/8/23.
  */
 public class Solution {
     public static void main(String[] args) {

@@ -10,7 +10,7 @@ package net.helao.leetcode.lession9;
  *    * -1 --> false
  *
  * </pre>
- * Created by wangcheng<gates@mucang.cn> on 2016/10/14.
+ * Created by snaigle on 2016/10/14.
  */
 public class Solution {
     public boolean isPalindrome(int x) {

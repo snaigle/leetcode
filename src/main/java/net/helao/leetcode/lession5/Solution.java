@@ -3,7 +3,7 @@ package net.helao.leetcode.lession5;
 /**
  * 给定字符串，找出里面最长的那个回文串
  * 思路，按中心点将字符串循环一遍，判断最长的回文串
- * Created by wangcheng<gates@mucang.cn> on 16/9/9.
+ * Created by snaigle on 16/9/9.
  */
 public class Solution {
 

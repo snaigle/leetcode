@@ -1,7 +1,7 @@
 package net.helao.leetcode.lession2;
 
 /**
- * Created by wangcheng<gates@mucang.cn> on 16/7/19.
+ * Created by snaigle on 16/7/19.
  */
 public class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {

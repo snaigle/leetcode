@@ -1,7 +1,7 @@
 package net.helao.leetcode.lession10;
 
 /**
- * @author wangcheng<wangcheng@mucang.cn>
+ * @author snaigle
  * @date 2017/8/2.
  */
 public class Solution {

@@ -3,7 +3,7 @@ package net.helao.leetcode.lession11;
 import java.time.Clock;
 
 /**
- * @author wangcheng<wangcheng@mucang.cn>
+ * @author snaigle
  * @date 2017/8/2.
  */
 public class Solution {

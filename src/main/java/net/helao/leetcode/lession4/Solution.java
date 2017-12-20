@@ -5,7 +5,7 @@ package net.helao.leetcode.lession4;
  * 刚开始看到题，第一印象就是用归并排序，处理到中位数时，直接返回值即可，tc为 log((n+m)/2)。
  * 可看题给出tc为 log(n+m)，让我很困惑，没想到方案，只能按归并来处理，提交后就被接受了，测试运行时间5ms，看了时间分布图，5ms比c和c++还要快了
  * 很疑惑别人是怎么做的，为什么这么慢
- * Created by wangcheng<gates@mucang.cn> on 16/9/6.
+ * Created by snaigle on 16/9/6.
  */
 public class Solution {
 

@@ -13,7 +13,7 @@ package net.helao.leetcode.lession8;
  * <li> ' 21474836472' => 2147483647 </li>
  * <li> ' -21474836472' => -2147483648 </li>
  * </ul>
- * Created by wangcheng<gates@mucang.cn> on 2016/10/13.
+ * Created by snaigle on 2016/10/13.
  */
 public class Solution {
     public int myAtoi(String str) {

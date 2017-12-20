@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * @author wangcheng<wangcheng@mucang.cn>
+ * @author snaigle
  * @date 2017/8/18.
  */
 public class Solution {

@@ -6,7 +6,7 @@ package net.helao.leetcode.lession7;
  * <p>
  * 注意事项： 1. 翻转后有可能出现0在前面的情况
  * 2. 翻转后有可能导致integer溢出，溢出后需要返回0
- * Created by wangcheng<gates@mucang.cn> on 2016/10/10.
+ * Created by snaigle on 2016/10/10.
  */
 public class Solution {
 

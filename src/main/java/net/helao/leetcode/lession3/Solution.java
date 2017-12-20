@@ -6,7 +6,7 @@ package net.helao.leetcode.lession3;
  * Examples:
  * Given 'pwwkew', the answer is 'wke'
  * <p>
- * Created by wangcheng<gates@mucang.cn> on 16/8/24.
+ * Created by snaigle on 16/8/24.
  */
 public class Solution {
 

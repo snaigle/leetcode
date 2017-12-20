@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author wangcheng<wangcheng@mucang.cn>
+ * @author snaigle
  * @date 2017/8/3.
  */
 public class Solution {

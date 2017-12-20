@@ -2,7 +2,7 @@ package net.helao.leetcode.lession6;
 
 /**
  * 给定字符串，并按zigzag模式重排后，读取
- * Created by wangcheng<gates@mucang.cn> on 16/9/10.
+ * Created by snaigle on 16/9/10.
  */
 public class Solution {
     public String convert(String s, int numRows) {
